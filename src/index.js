@@ -5,13 +5,14 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Navigate } from "./Navegacao";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Router>
     <Routes>
       <Route path="/:route" element={<App />} />
-      <Route path="/" element={<App />} />
+      <Route path="/" element={<Navigate />} />
     </Routes>
   </Router>
 );

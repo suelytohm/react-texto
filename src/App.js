@@ -17,6 +17,10 @@ function App() {
   const [notas, setNotas] = useState("");
   const [init, setInit] = useState(false);
 
+  const httpConf = (dados, metodo) => {
+    httpConfig(dados, metodo);
+  };
+
   useEffect(() => {
     (async () => {
       let res = "";
@@ -28,7 +32,7 @@ function App() {
           content: notas,
           rota: route,
         };
-        httpConfig(notinhas, "PATCH");
+        httpConf(notinhas, "PATCH");
       }
 
       // Caso estiver iniciando o editor
@@ -43,7 +47,7 @@ function App() {
             rota: route,
           };
           // Criando novo registro no banco de dados com a nova URL
-          httpConfig(notinhas2, "POST");
+          httpConf(notinhas2, "POST");
         } else {
           // Carregando os dados do banco e atribuindo o valor as notas
           setNotas(data.content);
