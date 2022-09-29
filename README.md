@@ -8,3 +8,5 @@ Após inserir, abrirá um editor de textos que poderá ser acessado pela URL que
 
 
 ![image](https://user-images.githubusercontent.com/16282738/192912770-f5c52741-753b-4f02-ba91-f934612f4c49.png)
+
+O projeto está disponível [clicando aqui](https://react-texto.vercel.app)
