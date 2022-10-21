@@ -27,7 +27,7 @@ function App() {
       let data = "";
 
       // Se já existir dados e o editor estiver iniciado
-      if (init) {
+      if (init && notas !== "") {
         const notinhas = {
           content: notas,
           rota: route,
